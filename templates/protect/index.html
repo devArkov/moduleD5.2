@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}  {% endblock title %}
+
+{% block content %}
+
+    <h2>Страница авторизованного пользователя {{ request.user.username }}</h2>
+
+    <div>
+        Дополнительная информация
+    </div>
+
+    <button><a href="sign/logout">Выйти</a></button>
+
+{% endblock content %}
